@@ -1,20 +1,25 @@
-# 4U Logistics
+# POS
 
-A Logistics Web Application using `NEXT.js`
+A Multi Store POS Web Application using `NEXT.js`
 
 ## Demo
 
-[Live Preview](https://4u-frontend.vercel.app/)
+[Live Preview](https://pos-frontend.vercel.app/)
 
 ## Screenshots
 
-![screenshot](https://github.com/tusharahmmed/4u_logistics_frontend/blob/main/screenshot1.png)
+![screenshot](https://github.com/tusharahmmed/pos-frontend/blob/main/screenshot.png)
 
 ## Features
 
 - Fully Functional Web Application using `Next.js`
-- Visitors can submit quotation for shipment, custome can submit delivery requests etc.
-- It has role based dashboard options where super admin can manage all website operations and crate new admin with specific permissions.
+- Role-Based Access Control: Store Admin, Super Admin roles with varying permissions.
+- Secure login/logout with JWT.
+- Overview of store performance metrics and key statistics.
+- Add, edit, and delete products,brands or categories with details (name, price, description, etc.).
+- User-friendly interface for processing sales, including product selection, quantity adjustment
+- Track key performance indicators (KPIs) such as total sales, average transaction value, and sales by product or category.
+- View and search past transactions, with details on products sold, payment method, and customer.
 
 ## Technology Used
 
@@ -29,8 +34,4 @@ These all are firebase credentials.
 
 ## Backend of this project
 
-[Backend Repository](https://github.com/tusharahmmed/4u_logistics_backend)
-
-## Copyright
-
-© Copyright 2022 all right reserved [Tushar Ahmmed](https://github.com/tusharahmmed)
+[Backend Repository](https://github.com/tusharahmmed/pos-backend)
