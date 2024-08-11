@@ -1,0 +1,74 @@
+.container {
+  @apply font-inter;
+  padding: 1rem 0;
+}
+.customer {
+  @apply border-b-2 border-slate-200;
+  padding: 0 1.5rem;
+  h2 {
+    @apply text-lg font-bold;
+    margin-bottom: 0.8rem;
+  }
+
+  input {
+    @apply border-2 border-slate-200 rounded-full;
+    padding: 7px 1rem;
+    margin-bottom: 0.8rem;
+    outline: none;
+  }
+  input:hover {
+    @apply border-2 border-gold;
+  }
+  input:focus {
+    @apply border-2 border-gold;
+    box-shadow: none;
+  }
+}
+.orders {
+  @apply border-b-2 border-slate-200;
+  padding: 1rem 5px 0 1.5rem;
+  h2 {
+    @apply text-lg font-bold;
+    margin-bottom: 0.8rem;
+  }
+}
+.items {
+  height: 15.2rem;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  padding-right: 1.5rem;
+
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  &::-webkit-scrollbar-track {
+    // box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 99px;
+    background-color: rgba(169, 169, 169, 0.386);
+    // outline: 1px solid slategrey;
+  }
+}
+
+.price {
+  @apply text-slate-500 font-medium;
+  padding: 1rem 1.5rem;
+  p {
+    span {
+      @apply font-bold text-black;
+    }
+  }
+}
+.payBtn {
+  display: inline-block;
+  width: 100%;
+  background-color: #ffab18;
+  color: white;
+  border-radius: 99px;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}

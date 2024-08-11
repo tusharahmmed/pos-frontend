@@ -1,0 +1,137 @@
+@import "../mixin";
+.section {
+  padding-top: 88px;
+  padding-bottom: 165px;
+}
+.sectionTitle {
+  @apply w-9/12 m-auto;
+
+  h2 {
+    @apply font-sans;
+    color: var(--Main-2, #0a0b0c);
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 131%; /* 52.4px */
+    letter-spacing: -1px;
+    margin-bottom: 24px;
+  }
+  h3 {
+    @apply font-inter;
+    color: var(--bw-black, #0a0b0c);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 36px */
+    text-align: center;
+  }
+}
+.formWraper {
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 16px;
+  background: white;
+  padding-top: 32px;
+  padding-left: 18%;
+  padding-right: 18%;
+  margin-top: 48px;
+}
+.inputWraper {
+  margin-bottom: 24px;
+}
+.submit {
+  padding-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  button {
+    @apply font-inter;
+
+    display: flex;
+    width: 150px;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #dd463e;
+    background: #ffab18;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1),
+      0px 0px 0px 1px rgba(0, 0, 0, 0.1) inset;
+    color: var(--white-white, #fff);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+  }
+}
+
+@include md {
+  .section {
+    padding-top: 44px;
+    padding-bottom: 100px;
+  }
+  .sectionTitle {
+    @apply w-10/12 m-auto;
+  }
+  .formWraper {
+    margin-left: 8%;
+    margin-right: 8%;
+
+    padding-top: 32px;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 48px;
+  }
+}
+@include sm {
+  .section {
+    padding-top: 44px;
+    padding-bottom: 100px;
+  }
+  .sectionTitle {
+    @apply w-10/12 m-auto;
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 24px;
+    }
+  }
+  .formWraper {
+    margin-left: 8%;
+    margin-right: 8%;
+
+    padding-top: 32px;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 48px;
+  }
+}
+@include xs {
+  .section {
+    padding-top: 44px;
+    padding-bottom: 100px;
+  }
+  .sectionTitle {
+    @apply w-full m-auto;
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 24px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+  }
+  .formWraper {
+    margin-left: 0%;
+    margin-right: 0%;
+
+    padding-top: 32px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 48px;
+  }
+}

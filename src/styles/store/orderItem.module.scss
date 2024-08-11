@@ -1,0 +1,41 @@
+.item {
+  @apply border-b-2 border-slate-200;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+
+  scroll-snap-align: start end;
+
+  &:last-child {
+    border: none;
+  }
+}
+.thumb {
+  img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+.btnMinus,
+.btnPlus {
+  display: inline-block;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  border-radius: 99px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 200;
+}
+.btnMinus {
+  background-color: #e4e4e5;
+}
+.btnPlus {
+  background-color: #1a1a1a;
+  color: white;
+}

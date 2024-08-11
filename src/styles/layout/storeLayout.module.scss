@@ -1,0 +1,12 @@
+.container {
+  overflow: hidden;
+}
+.contentWraper {
+  display: grid;
+  grid-template-columns: 0.7fr 5fr 1.5fr;
+  height: 100%;
+}
+.content {
+  @apply border-x-2 border-slate-200;
+  background-color: #f8f9fd;
+}

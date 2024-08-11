@@ -1,0 +1,24 @@
+.product {
+  @apply font-inter;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+
+  h2 {
+    @apply font-bold text-lg;
+    text-align: center;
+    padding: 0.8rem 0 0.5rem 0;
+  }
+  p {
+    @apply font-bold text-lg text-gold pb-4;
+    text-align: center;
+  }
+}
+.thumb {
+  img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+  }
+}

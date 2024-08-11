@@ -1,0 +1,29 @@
+.itemWraper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+
+  p {
+    @apply text-sm;
+  }
+
+  scroll-snap-align: center;
+  // scroll-snap-stop: always;
+}
+
+.itemWraper:nth-last-child(0) {
+  margin-bottom: 0px;
+}
+.imgWraper {
+  display: flex;
+}

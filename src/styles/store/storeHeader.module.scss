@@ -1,0 +1,41 @@
+.header {
+  @apply font-inter;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 20px;
+}
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-weight: 700;
+}
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.nav {
+  @apply text-[#89898A];
+  // margin-right: 40px;
+  margin-right: 100px;
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    li {
+      @apply text-base;
+      a {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+    }
+  }
+}
